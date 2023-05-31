@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# 2016-07-16 v1.0.0
+*.jpg
+*.png
+*.gif
+*.pdf
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /index.php?page=offline
