@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+include "../globalFunctions.php";
+
 $db = db_mdj();
 
 $debugging = 0; // 1 for debug info showing, 0 for not showing
