@@ -109,7 +109,7 @@ if ($myId >= 1) {
                 if ($width != null && $height != null) {
                     $imageType = getPicType($_FILES["pic1"]['type']);
                     $imageName = $time . "." . $imageType;
-                    processPic("$domain/cmPics/$myId", $imageName, $tmpFile, 800,
+                    processPic("cmPics/$myId", $imageName, $tmpFile, 800,
                             150);
                     $p1stmt = $db->prepare(
                             "UPDATE $table SET pic1 = ? WHERE id = ?");
@@ -126,7 +126,7 @@ if ($myId >= 1) {
                 if ($width != null && $height != null) {
                     $imageType = getPicType($_FILES["pic2"]['type']);
                     $imageName = $time . "." . $imageType;
-                    processPic("$domain/cmPics/$myId", $imageName, $tmpFile, 800,
+                    processPic("cmPics/$myId", $imageName, $tmpFile, 800,
                             150);
                     $p2stmt = $db->prepare(
                             "UPDATE $table SET pic2 = ? WHERE id = ?");
